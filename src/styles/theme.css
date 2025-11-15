@@ -1,0 +1,92 @@
+:root {
+    --bg: #e7e7e7;
+    --bg-nav: #e0e0e0;
+    --title: #5f5d5d;
+    --hover: #f5f5f5;
+    --text: #1f2530;
+    --card: #f5f2f2;
+    --card-hover: #eaeff3;
+    --search: #e7e5e5;
+    --white: #ffffff;
+
+    --primary: #0082fc;
+    --secondary: #0082fc;
+    --danger: #ef4444e6;
+}
+
+body.dark {
+    --bg: #212631;
+    --bg-nav: #222e42;
+    --title: #e7e5e5;
+    --text: #ffffff;
+    --card: #2a446b;
+    --card-hover: #1e437a;
+    --search: #dadada;
+    --white: #0f0f0f;
+
+    --primary: #7700ff;
+    --secondary: #0082fc;
+    --danger: #ef4444e6;
+}
+
+/* Global styling */
+body {
+    background: var(--bg);
+    color: var(--text);
+    padding-top: 80px;
+    transition: background .3s, color .3s;
+}
+
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color:white;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.btn-edit {
+    background: var(--secondary);
+    color: white;
+    margin-right: 8px;
+}
+
+.btn-edit:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-delete {
+    background: #ef4444e6;
+    color: white;
+}
+
+.btn-delete:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
